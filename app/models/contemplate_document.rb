@@ -1,0 +1,2 @@
+class ContemplateDocument < ApplicationRecord
+end
