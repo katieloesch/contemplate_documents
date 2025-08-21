@@ -3,7 +3,7 @@ class ContemplateDocumentsController < ApplicationController
 
   # GET /contemplate_documents
   def index
-    @contemplate_documents = ContemplateDocument.all
+    @contemplate_documents = ContemplateDocument.order('created_at DESC')
 
     render json: @contemplate_documents
   end
